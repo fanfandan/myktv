@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/ktv/public/css/bootstrap.css">
+    <script src="/ktv/public/js/jquery-3.2.1.js"></script>
+    <script src="/ktv/public/js/adminheader.js"></script>
+</head>
+<style>
+    .tips{
+        width: 0%;
+        height: 5px;
+        background: #0085d0;
+        position: fixed;
+        top:0;
+        left:0;
+    }
+    .hot{
+        background: lightgray;
+    }
+</style>
+<body>
+<div class="tips"></div>
+<nav class="navbar navbar-default" style="padding: 0 40px;">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">KTV管理</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="<?php echo $title=='游戏管理'?'hot':'' ;?>">
+                    <a href="/ktv/index.php/game/index">游戏管理</a>
+                </li>
+                <li class="<?php echo $title=='商店管理'?'hot':'' ;?>">
+                    <a href="/ktv/index.php/shopmanage/index">商店管理</a>
+                </li>
+                <li >
+                    <a href="#">我的管理</a>
+                </li>
+                <li class="dropdown  " >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">歌曲管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=" /ktv/index.php/singermanage/music
+                        ">歌曲分类</a></li>
+                        <li><a href="/ktv/index.php/singermanage/index">歌手管理</a></li>
+                        <li><a href="/ktv/index.php/song/index">歌曲管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+

@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+    -webkit-user-select: none;
+}
+a{
+    text-decoration: none  ;
+}
+html{
+    width:100%;
+    height: 100%;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/ggc.png") no-repeat center/cover;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*导航开始*/
+.nav{
+    width: 100%;
+    height: 0.37rem;
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.22rem;
+}
+.nav a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav h3{
+    color: white;
+    font-size: 0.33rem;
+    font-weight: normal;
+}
+/*导航结束*/
+/*歌词部分开始*/
+.wrapper{
+    width: 100%;
+    height: 6.13rem;
+    margin-top: 0.52rem;
+    margin-bottom: 1.47rem;
+    /*overflow: hidden;*/
+}
+.geci{
+    width: 100%;
+    height: 6.13rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.geci li{
+    width:100%;
+    height: 0.8rem;
+    margin-bottom: 0.02rem;
+    font-size: 0.34rem;
+    color: white;
+    text-align: center;
+
+}
+/*歌词部分结束*/
+.anniu{
+    width:100%;
+    height: 1.39rem;
+}
+.anniu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.anniu ul li{
+    width: 0.88rem;
+    height: 1.41rem;
+    display: flex;
+    text-align: center;
+
+}
+.anniu ul li img{
+    width:0.91rem;
+    height: 0.91rem;
+}
+.anniu ul li h3{
+    font-size: 0.25rem;
+    font-weight: normal;
+    color: black;
+}
+.anniu ul li:nth-of-type(3) {
+    width: 1.15rem;
+    height: 1.41rem;
+}
+.anniu ul li:nth-of-type(3) img{
+    width:1.12rem;
+    height: 1.12rem;
+}
+/*底部开始*/
+.footer{
+
+}
+.up{
+    width:100%;
+    height: 0.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.52rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.up img{
+    width:0.41rem;
+    height: 0.48rem;
+}
+.up .jindu{
+    width: 6.5rem;
+    height: 0.07rem;
+    background: #e8d8dd;
+}
+.up .red{
+    position: absolute;
+    top:0.21rem;
+    left:0.4rem;
+    background:#f85f7c;
+    height: 0.07rem;
+}
+.up span{
+    font-size: 0.2rem;
+}
+
+/*底部结束*/

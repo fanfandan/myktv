@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+a{
+    text-decoration: none;
+    width: 0;
+    height: 0;
+}
+html {
+    width: 100%;
+    height: 100%; }
+
+body {
+    width:100%;
+    height:100%;
+    background: url("../img/myself.jpg") ;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;}
+
+
+header {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.88rem; }
+header a:first-of-type {
+    width: 0.4rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    margin-top: 0.24rem;
+    background: url("../img/at_04.png") no-repeat center/cover; }
+header p {
+    width: 1.5rem;
+    height: 100%;
+    font-size: 0.36rem;
+    color: #ffffff; }
+
+nav {
+    width: 100%;
+    height: 0.66rem;
+    display: flex;
+    justify-content: center; }
+nav ul {
+    width: 4.06rem;
+    height: 0.66rem;
+    border-radius: 0.3rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0.07rem;
+    position: relative; }
+nav ul li {
+    flex: 1;
+    height: 0.48rem;
+    text-align: center;
+    line-height: 0.48rem;
+    font-size: 0.22rem;
+    color: #000000;
+    z-index: 100; }
+nav ul li:nth-of-type(1).active ~ .flag {
+    transform: translate3d(0, 0, 0); }
+nav ul li:nth-of-type(2).active ~ .flag {
+    transform: translate3d(100%, 0, 0); }
+nav ul li.active {
+    color: #ffffff; }
+nav ul .flag {
+    width: 1.96rem;
+    height: 0.52rem;
+    border-radius: 0.3rem;
+    background: #ff318d;
+    border: 0.01rem solid #e5267c;
+    position: absolute;
+    top: 0.07rem;
+    left: 0.07rem;
+    z-index: 99;
+    transition: all 0.5s; }
+
+.wrapper.active {
+    opacity: 1;
+    z-index: 100; }
+
+.wrapper {
+    padding: 0 0.24rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 9.8rem;
+    overflow: hidden; }
+.wrapper .cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 0.24rem;
+    height: auto;
+    width: 100%; }
+.wrapper .cont ul {
+    height: auto; }
+.wrapper .cont ul li {
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+    background: url("../img/borderBottom.png") no-repeat left bottom; }
+.wrapper .cont ul li div:first-of-type {
+    flex: 1; }
+.wrapper .cont ul li div:first-of-type img {
+    width: 2.3rem;
+    height: 2.44rem;
+    margin: 0.13rem 0.4rem; }
+.wrapper .cont ul li div:last-of-type {
+    flex: 1.5;
+    width: 100%;
+    height: 100%; }
+.wrapper .cont ul li div:last-of-type div:first-of-type {
+    height: 0.3rem;
+    font-size: 0.18rem;
+    color: #575861;
+    line-height: 0.3rem;
+    margin-top: 0.6rem; }
+.wrapper .cont ul li div:last-of-type div:first-of-type span:nth-of-type(1) {
+    margin-right: 0.2rem; }
+.wrapper .cont ul li div:last-of-type div:nth-of-type(2) {
+    font-size: 0.28rem;
+    color: #ff326c;
+    line-height: 0.6rem; }
+.wrapper .cont ul li div:last-of-type div:nth-of-type(2) span {
+    font-weight: bold; }
+.wrapper .cont ul li div:last-of-type div:nth-of-type(3) {
+    height: 0.35rem;
+    margin: 0 auto;
+    margin-top: 0.15rem; }
+.wrapper .cont ul li div:last-of-type div:nth-of-type(3) span {
+    float: left;
+    width: 0.81rem;
+    height: 0.35rem;
+    border: 0.02rem solid #d2d2d2;
+    border-radius: 0.14rem;
+    display: inline-block;
+    margin-right: 0.15rem;
+    font-size: 0.18rem;
+    color: #858585;
+    line-height: 0.31rem;
+    text-align: center; }
+.wrapper .cont ul li div:last-of-type div i {
+    float: right;
+    font-size: 0.24rem;
+    color: #fe318e;
+    line-height: 0.35rem;
+    margin-right: 1.5rem; }
+.wrapper .cont ul li div:last-of-type div i b {
+    font-size: 0.32rem; }
+.wrapper .cont ul li:last-of-type {
+    background: none; }
+.wrapper main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 0.24rem;
+    width: 100%;
+    height: 10.72rem;
+    margin-top: 0.27rem;
+    overflow: hidden; }
+.wrapper main ul {
+    width: 100%; }
+.wrapper main ul li {
+    width: 100%;
+    height: 1.55rem;
+    border-top: 1px dashed #b7b7b7; }
+.wrapper main ul li a {
+    display: inline-block;
+    height: 100%; }
+.wrapper main ul li a:first-child {
+    min-width: 5rem; }
+.wrapper main ul li a:first-child .img {
+    position: relative;
+    float: left;
+    margin-right: 0.6rem;
+    width: 1.07rem;
+    height: 100%; }
+.wrapper main ul li a:first-child .img div {
+    border-radius: 0.11rem;
+    position: absolute;
+    margin: 0.24rem; }
+.wrapper main ul li a:first-child .img div:first-child {
+    z-index: 100;
+    width: 1.05rem;
+    height: 1.05rem;
+    border: 0.02rem;
+    overflow: hidden; }
+.wrapper main ul li a:first-child .img div:first-child .simg {
+    width: 100%; }
+.wrapper main ul li a:first-child .img div:last-child {
+    z-index: 99;
+    background: #fe3191;
+    width: 1.07rem;
+    height: 1.07rem;
+    transform: rotate(7deg); }
+.wrapper main ul li a:first-child .songT {
+    float: left; }
+.wrapper main ul li a:first-child .songT p:first-child {
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    margin-top: 0.53rem;
+    color: #58606d; }
+.wrapper main ul li a:first-child .songT p:last-child {
+    font-size: 0.16rem;
+    line-height: 0.5rem;
+    color: #cdcdcd; }
+.wrapper main ul li a:nth-child(2) {
+    width: 0.47rem;
+    background: url("../img/btnd.png") no-repeat center/cover;
+    background-size: 0.47rem 0.47rem;
+    margin-left: 0.45rem; }
+.wrapper main ul li a:nth-child(3) {
+    width: 0.47rem;
+    background: url("../img/btnt.png") no-repeat center/cover;
+    background-size: 0.47rem 0.47rem;
+    float: right; }
+.wrapper main li:nth-of-type(1) {
+    border-top: none; }
+
+footer {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0;
+    padding: 0 0.24rem;
+    width: 100%;
+    height: 0.91rem;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-between; }
+footer div {
+    flex: 1;
+    font-size: 0.30rem;
+    line-height: 0.91rem;
+    color: #ff318e; }
+footer div span:first-child {
+    font-size: 0.38rem;
+    font-weight: bold; }
+footer div span:last-child {
+    font-size: 0.14rem; }
+footer a {
+    display: block;
+    width: 3.56rem;
+    height: 0.91rem;
+    background: url("../img/xhl.png") no-repeat center/cover; }

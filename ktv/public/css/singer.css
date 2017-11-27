@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/yylbg.png") ;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*导航开始*/
+.nav{
+    width: 100%;
+    height: 0.37rem;
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.22rem;
+}
+.nav a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav h3{
+    color: white;
+    font-size: 0.33rem;
+    font-weight: normal;
+}
+/*导航结束*/
+.fenlei{
+    width: 100%;
+    height: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.24rem;
+    align-items: center;
+    padding-left: 0.23rem;
+    padding-right: 0.23rem;
+    margin-bottom: -0.3rem;
+    letter-spacing: 0.03rem;
+}
+input{
+    width: 100%;
+    height: 0.66rem;
+    border:none;
+    outline: none;
+    border-radius: 0.23rem;
+    margin-top: 0.24rem;
+    padding-left: 2.5rem;
+}
+/*图片开始*/
+.content{
+    width: 100%;
+    height: 9.44rem;
+    background: white;
+    margin-top: 0.31rem;
+}
+.content ul li{
+    float: right;
+}
+.content ul li:nth-of-type(1){
+    width: 100%;
+    height: 3.98rem;
+    position: relative;
+}
+.content ul li:nth-of-type(2){
+    width: 33.3%;
+    height: 2.1rem;
+    position: relative;
+
+}
+.content ul li:nth-of-type(3){
+    width: 33.3%;
+    height: 2.1rem;
+    position: relative;
+
+}
+.content ul li:nth-of-type(4){
+    width: 33.3%;
+    height: 2.1rem;
+    position: relative;
+}
+.content ul li:nth-of-type(5){
+    width: 66.4%;
+    height: 3.27rem;
+    position: relative;
+}
+.content ul li:nth-of-type(6){
+    width: 33.5%;
+    height: 3.27rem;
+    position: relative;
+}
+.content ul li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content ul li .zhezhao{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.26rem;
+    font-weight: normal;
+}
+/*.content .first{
+    width: 100%;
+    height: 3.98rem;
+    position: relative;
+}
+.content .first img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content .first .zhezhao{
+    width: 4.77rem;
+    height: 1.41rem;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -2.36rem;
+    margin-top: -0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.26rem;
+}
+.tupian >li{
+    margin-bottom: 0.02rem;
+}
+!*第二个li*!
+.tupian >li:nth-of-type(2){
+    width: 100%;
+    height: 2.1rem;
+    margin-bottom: 0.02rem;
+    display: flex;
+    box-sizing: border-box;
+}
+.tupian >li .tf{
+     width:40%;
+     height: 100%;
+     position: relative;
+    margin-right: 0.02rem;
+ }
+.tupian >li .tf img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tupian >li .tf  .zhezhao{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.22rem;
+    color: white;
+}
+!*2*!
+.tupian >li .tt{
+    width:30%;
+    height: 100%;
+    position: relative;
+    margin-right: 0.02rem;
+}
+.tupian >li .tt img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tupian >li .tt  .zhezhao{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.22rem;
+    color: white;
+}
+!*3*!
+.tupian >li .th{
+    width:30%;
+    height: 100%;
+    position: relative;
+}
+.tupian >li .th img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tupian >li .th  .zhezhao{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.22rem;
+    color: white;
+}
+!*第三个li*!
+.tupian >li:nth-of-type(3){
+    width: 100%;
+    height: 3.27rem;
+    display: flex;
+    box-sizing: border-box;
+}
+.tupian >li .sf{
+    width:40%;
+    height: 100%;
+    position: relative;
+}
+.tupian >li .sf img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tupian >li .sf  .zhezhao{
+    width:1.67rem;
+    height: 1.01rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -0.53rem;
+    margin-left: -0.83rem;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.22rem;
+    color: white;
+}
+!*2*!
+.tupian >li .st{
+    width:60%;
+    height: 100%;
+    position: relative;
+}
+.tupian >li .st img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tupian >li .st  .zhezhao{
+    width:1.67rem;
+    height: 1.01rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -0.53rem;
+    margin-left: -0.83rem;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.22rem;
+    color: white;
+}*/
+

@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/gbj.png") ;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.toubu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0.81rem;
+}
+.toubu a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav{
+    width:2.91rem;
+    height:0.7rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.nav span:first-of-type{
+    font-size: 0.26rem;
+    color: white;
+}
+.nav span:last-of-type{
+    font-size: 0.23rem;
+    color: white;
+}
+button{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border:none;
+    background: white;
+    font-size: 0.21rem;
+    line-height: 0.48rem;
+    text-align: center;
+    color: black;
+    z-index: 999999;
+}
+button.active{
+    background: #ff318d;
+}
+button.active .s1{
+    color: white;
+}
+button.active .s2{
+    color: gray;
+}
+button.active:nth-of-type(1) ~ .flag{
+    transform:translate3D(133%,0,0);
+}
+button.active:nth-of-type(2) ~ .flag{
+    transform:translate3D(253%,0,0);
+}
+.flag{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    background: #ff318d;
+    position: absolute;
+    z-index: 666;
+    left: 0;
+    transition: all 0.5s;
+}
+/*内容开始*/
+.wrapper{
+    width:6.99rem;
+    height: 8.6rem;
+    background: white;
+    margin-top: -0.5rem;
+    overflow: hidden;
+}
+.wrapper .scroller li{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 0.6rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0.24rem;
+}
+.wrapper .scroller li .tu{
+    width: 2.48rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroller li .tu img{
+    width: 1.98rem;
+    height: 1.7rem;
+    display: block;
+}
+.scroller li .text{
+    width: calc(6.99rem - 2.48rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.scroller li .text .miaoshu{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    /* border: 0.01rem solid black; */
+    border-bottom: 0.01rem dashed lightgray;
+    height: 0.46rem;
+
+}
+.scroller li .text .s1{
+    font-size: 0.23rem;
+    color: #fc50a5;
+}
+.scroller li .text h3{
+    font-size: 0.21rem;
+    color: black;
+}
+.scroller li .text .s2 {
+    font-size: 0.24rem;
+    color: #a6a6a6;
+}
+.content{
+    width:1.77rem;
+    height:0.35rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 0.3rem;
+}
+.content .reduce{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/subtract.png") center/cover;
+}
+.content .wenzi{
+    width:0.81rem;
+    height:0.35rem;
+    border-radius: 0.33rem;
+    border:0.02rem solid gray;
+    text-align: center;
+    line-height: 0.35rem;
+    font-size: 0.17rem;
+}
+.content .plus{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/plus.png") center/cover;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.price span{
+    font-size: 0.32rem;
+    color: #fc50a5;
+
+}
+/*内容结束*/
+.jiage{
+    width:100%;
+    height:0.49rem;
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.67rem;
+}
+.jiage span:first-of-type{
+    color: #ccd3e2;
+    font-size: 0.5rem;
+}
+.jiage>div{
+    width: 0.56rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.jiage>div h3{
+    font-size:0.28rem;
+    color: #fc50a5;
+}
+.jiage>div h4{
+    font-size:0.24rem;
+    color: gray;
+}
+.jiage span{
+    font-size: 0.5rem;
+    color: #fc50a5;
+}
+/*结束*/
+footer{
+    width: 100%;
+    height: 0.67rem;
+    display: flex;
+    justify-content: center;
+}
+.last{
+    width:5.86rem;
+    height:0.67rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background:#f8319e;
+    font-size: 0.24rem;
+    color: white;
+    line-height: 0.67rem;
+}

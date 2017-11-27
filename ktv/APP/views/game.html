@@ -1,0 +1,62 @@
+<?php include 'adminheader.html';?>
+<head>
+    <script src="/ktv/public/js/game.js"></script>
+</head>
+<style>
+    input{
+        border:none;
+        background: none;
+        outline:none;
+    }
+</style>
+
+<body>
+<div style="padding:0 50px">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation"  id="add">
+            <a href="#add" aria-controls="home" role="tab" data-toggle="tab">添加游戏</a>
+        </li>
+        <li role="presentation" id="list">
+            <a href="#list" aria-controls="profile" role="tab" data-toggle="tab">查看游戏</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="add-tab">
+            <form action="javascript:;" style="padding:20px 0px;">
+                <div class="form-group">
+                    <label>游戏名称</label>
+                    <input type="text" class="form-control" id="user" placeholder="游戏名称"
+                           name="gname">
+                </div>
+                <div class="form-group box">
+                    <label>游戏类型</label>
+                    <select name="type" class="form-control">
+
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list-tab">
+            <table class="table table-striped">
+                <thead>
+                <td>游戏id</td>
+                <td>游戏名称</td>
+                <td>游戏类型</td>
+                <td>删除</td>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>真心话</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

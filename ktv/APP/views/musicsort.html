@@ -1,0 +1,91 @@
+<?php include 'adminheader.html';?>
+<head>
+    <script src="/ktv/public/js/musicsort.js"></script>
+</head>
+<style>
+    input{
+        border:none;
+        background: none;
+        outline:none;
+    }
+</style>
+
+<body>
+<div class="col-md-3" role="complementary" style="width: 150px; ">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+        <ul class="nav bs-docs-sidenav">
+            <li>
+                <a href="/ktv/index.php/singermanage/music">歌曲分类</a>
+            </li>
+            <li>
+                <a href="/ktv/index.php/singermanage/index">歌手管理</a>
+            </li>
+            <li>
+                <a href="/ktv/index.php/song/index">歌曲管理</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<div style="padding:0 150px">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" style="height: 40px">
+        <li role="presentation"  id="add">
+            <a href="#add" aria-controls="home" role="tab" data-toggle="tab">添加分类</a>
+        </li>
+        <li role="presentation" id="list">
+            <a href="#list" aria-controls="profile" role="tab" data-toggle="tab">查看分类</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="add-tab">
+            <form action="javascript:;" style="padding:20px 0px;">
+                <div class="form-group">
+                    <label>所属类别</label>
+                    <input type="text" class="form-control" id="user" placeholder="所属类别"
+                           name="class">
+                </div>
+                <div class="form-group">
+                    <label>图片</label>
+                    <input type="file" class="form-control" id="img"
+                           name="img" multiple>
+                </div>
+                <div class="imgbox" multiple>
+
+                </div>
+                <img src="" alt="" id="thumb">
+
+                <div class="form-group">
+                    <label>图片</label>
+                    <input type="hidden" class="yz" id="img1"
+                           name="img">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list-tab">
+            <table class="table table-striped">
+                <thead>
+                <td>id</td>
+                <td>所属类别</td>
+                <td>图片</td>
+                <td>删除</td>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+*{
+    -webkit-box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/sjbj.png");
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.nav{
+    width:100%;
+    height:0.68rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a:first-of-type{
+    width:0.4rem;
+    height:0.4rem;
+}
+.nav p{
+    color: white;
+    font-size: 0.3rem;
+}
+.page{
+    width:1rem;
+    font-size: 0.3rem;
+    color: lightgray;
+    text-decoration: none;
+}
+.page.active{
+    width:1rem;
+    font-size: 0.3rem;
+    color: white;
+    text-decoration: none;
+}
+.nav a:first-of-type{
+    background: url("../img/sd10 (1).png") no-repeat center;
+}
+.content{
+    width:7.01rem;
+    height:11.43rem;
+    margin-top: 0.26rem;
+    background: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+
+}
+.main{
+    width:6.4rem;
+    height:6.21rem;
+    display: flex;
+    justify-content: space-between;
+    align-content:  flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+.main li{
+    width:3rem;
+    height:3rem;
+    background: white;
+    box-shadow: 0 4px 4px 4px rgba(248,49,157,0.13);
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 0.4rem;
+    transition:  all 0.5s;
+    background: url("../img/at_03.png") center -3.5rem/cover;
+    font-size: 0;
+}
+.main>li.active{
+    background: #fff;
+    box-shadow: 0 0.09rem 0.05rem 0.02rem rgba(248,49,158,0.13);
+    color: #333;
+    font-size: 0.24rem;
+}
+.rule{
+    width:6.4rem;
+    height:2rem;
+    background: url("../img/at_02.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.annniu{
+    width:6.4rem;
+    height:1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.annniu button{
+    width: 2.5rem;
+    height: 1rem;
+    background: #ece7e7;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 1rem;
+    outline: none;
+    border-radius: 0.4rem;
+    border: none;
+    position: relative;
+    z-index: 999;
+}
+.annniu button.active{
+    background: #2196F3;
+    color: white;
+}
+button:nth-child(1).active ~.flag{
+    transform: translate3D(14%,0,0);
+}
+button:nth-child(2).active ~.flag{
+    transform: translate3D(142%,0,0);
+}
+.flag{
+    width: 2.5rem;
+    height: 1rem;
+    background: #2196F3;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 1rem;
+    outline: none;
+    border-radius: 0.4rem;
+    border: none;
+    position: absolute;
+    left:0;
+    top:0;
+    transition: all 0.3s;
+}
+
+
+

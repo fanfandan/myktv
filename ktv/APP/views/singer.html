@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="/ktv/public/js/rem.js"></script>
+    <link rel="stylesheet" href="/ktv/public/css/singer.css">
+</head>
+<body>
+<header>
+    <img src="/ktv/public/img/Bar.png" alt="">
+</header>
+<!--按钮开始-->
+<section class="nav">
+    <a href="javascript:history.back()"></a>
+    <h3>歌手</h3>
+    <a href=""></a>
+</section>
+<section class="fenlei">
+    <!--<a href="/ktv/index.php/paihang/index?paihang='排行'">排行</a>-->
+    <span>歌手</span>
+    <!--<a href="/ktv/index.php/paihang/index?paihang='推荐' ">推荐</a>-->
+    <span>推荐</span>
+    <span>常唱</span>
+    <span>推荐歌单</span>
+</section>
+<input type="text" placeholder="请输入您想要的信息">
+<section class="content">
+    <ul class="tupian">
+        <?php for($i=0;$i<count($data);$i++) { ?>
+            <li>
+                <a href="/ktv/index.php/sing/shownd?class=<?php echo $data[$i]['class']?>">
+                 <img src="<?php echo $data[$i]['img']?>" alt="">
+                 <div class="zhezhao">
+                  <h3><?php echo $data[$i]['class']?></h3>
+                 </div>
+                </a>
+             </li>
+        <?php } ?>
+    </ul>
+    <div class="second">
+    </div>
+</section>
+</body>
+</html>

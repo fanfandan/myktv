@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="/ktv/public/js/rem.js"></script>
+    <link rel="stylesheet" href="/ktv/public/css/ndsinger.css">
+</head>
+<body>
+<header>
+    <img src="/ktv/public/img/Bar.png" alt="">
+</header>
+<!--按钮开始-->
+<section class="nav">
+    <a href="javascript:history.back()"></a>
+    <h3><?php echo $data[0]['class'];?></h3>
+    <a href=""></a>
+</section>
+<section class="fenlei">
+    <span>歌手</span>
+    <span>排行</span>
+    <span>常唱</span>
+    <span>推荐歌单</span>
+</section>
+<input type="text" placeholder="请输入您想要的信息">
+<!--图片开始-->
+  <ul class="tupian">
+      <?php for($i=0;$i<count($data);$i++) { ;?>
+     <li>
+         <a href="/ktv/index.php/sing/music?sid=<?php echo $data[$i]['sid']?>">
+         <img src="<?php echo $data[$i]['img'];?>" alt="">
+         <h3><?php echo $data[$i]['name']?>(<?php echo $data[$i]['num']?>)</h3>
+         </a>
+     </li>
+      <?php } ;?>
+  </ul>
+<!--图片结束-->
+</body>
+</html>

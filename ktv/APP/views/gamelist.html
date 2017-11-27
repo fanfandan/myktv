@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <script src='/ktv/public/js/rem.js'></script>
+    <script src='/ktv/public/js/jquery-3.2.1.js'></script>
+    <script src='/ktv/public/js/gamelis.js'></script>
+    <link rel="stylesheet" href="/ktv/public/css/gamelist.css">
+</head>
+<body>
+<header>
+    <img src="/ktv/public/img/Bar.png" alt="">
+</header>
+<section class="nav">
+    <a href="javascript:history.back();"></a>
+    <p>游戏</p>
+    <a class="page">换一批</a>
+</section>
+<div class="content">
+    <ul class="main">
+        <?php for($i=0;$i<count($data1);$i++) {  ?>
+        <li><?php echo $data1[$i]['game'];?></li>
+        <?php }  ?>
+    </ul>
+    <div class="rule">
+    </div>
+    <div class="annniu">
+        <button class=" active" id="1">真心话</button>
+        <button class='' id="2">大冒险</button>
+        <div class="flag"></div>
+    </div>
+</div>
+</body>
+</html>

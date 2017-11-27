@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="/ktv/public/js/jquery-3.2.1.js"></script>
+    <script src="/ktv/public/js/rem.js"></script>
+    <script src="/ktv/public/js/paihang.js"></script>
+    <link rel="stylesheet" href="/ktv/public/css/paihang.css">
+</head>
+<body>
+<header>
+    <img src="/ktv/public/img/Bar.png" alt="">
+</header>
+<!--按钮开始-->
+<section class="nav">
+    <a href="/ktv/index.php/home/index"></a>
+    <h3><?php echo $data[0]['paihang']?></h3>
+    <a href=""></a>
+</section>
+<section class="fenlei">
+    <span>歌手</span>
+    <span>排行</span>
+    <span>常唱</span>
+    <span>推荐歌单</span>
+</section>
+<section class="header">
+     <ul>
+         <li><a href="">月排行</a></li>
+         <li><a href="">季排行</a></li>
+         <li><a href="">年排行</a></li>
+     </ul>
+ </section>
+<section class="lunbo">
+
+</section>
+<section class="gequ">
+  <ul>
+      <?php for($i=0;$i<count($data);$i++) { ?>
+      <li>
+          <a href="">
+              <img src="<?php echo $data[$i]['img'];?>" alt="">
+              <div class="text">
+                  <h3><?php echo $data[$i]['name']?></h3>
+                  <h4><?php echo $data[$i]['time']?></h4>
+              </div>
+          </a>
+      </li>
+      <?php } ?>
+  </ul>
+</section>
+</body>
+</html>

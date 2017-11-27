@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/yylbg.png")  no-repeat  center/cover;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*滑块部分开始*/
+.toubu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.81rem;
+}
+.nav{
+    width:3.7rem;
+    height:0.68rem;
+    background: white;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+button{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border:none;
+    background: white;
+    font-size: 0.21rem;
+    line-height: 0.48rem;
+    text-align: center;
+    color: black;
+    z-index: 999999;
+}
+button.active{
+    background: #ff318d;
+}
+button.active .s1{
+    color: white;
+}
+button.active .s2{
+    color: gray;
+}
+button.active:nth-of-type(1) ~ .flag{
+    transform:translate3D(133%,0,0);
+}
+button.active:nth-of-type(2) ~ .flag{
+    transform:translate3D(253%,0,0);
+}
+.flag{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    background: #ff318d;
+    position: absolute;
+    z-index: 666;
+    left: 0;
+    transition: all 0.5s;
+}
+/*按钮结束*/
+/*内容开始*/
+.main{
+    width:6.95rem;
+    height:8.01rem;
+    background: white;
+}
+.main li{
+    width:100%;
+    height:2.67rem;
+    border-bottom: 0.01rem dashed lightgray;
+}
+.main li .tu{
+    width:3.16rem;
+    height:100%;
+    position: relative;
+    display: inline-block;
+}
+.main li .tu img{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    width:2.17rem;
+    height:2.09rem;
+}
+.main li .text{
+    width:3.27rem;
+    height:100%;
+    padding-top: 0.63rem;
+    padding-left: 0.26rem;
+    float:right;
+}
+.main li .text h3{
+    font-size: 0.2rem;
+    margin-bottom: 0.16rem;
+    font-weight: normal;
+}
+.main li .text .price{
+    width:100%;
+    height:0.3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.main li .text .price .s1{
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: #ff4a7d;
+}
+.main li .text .price .s2{
+    font-size: 0.3rem;
+    color: #ff4a7d;
+    font-weight: normal;
+}
+.content{
+    width:1.77rem;
+    height:0.35rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 0.3rem;
+}
+.content .reduce{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/subtract.png") center/cover;
+}
+.content .wenzi{
+    width:0.81rem;
+    height:0.35rem;
+    border-radius: 0.33rem;
+    border:0.02rem solid gray;
+    text-align: center;
+    line-height: 0.35rem;
+    font-size: 0.17rem;
+}
+.content .plus{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/plus.png") center/cover;
+}
+/*内容结束*/

@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+a{
+    text-decoration: none;
+    width: 0;
+    height: 0;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/yylbg.png") ;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*导航开始*/
+.nav{
+    width: 100%;
+    height: 0.37rem;
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.22rem;
+}
+.nav a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav a:nth-of-type(2){
+    width: 0.75rem;
+    height: 0.37rem;
+    color: white;
+    font-size: 0.2rem;
+}
+.nav h3{
+    color: white;
+    font-size: 0.33rem;
+    font-weight: normal;
+}
+/*介绍开始*/
+.jieshao{
+    width:100%;
+    height: 1.35rem;
+    margin-top: 0.63rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.jieshao img{
+    width: 1.35rem;
+    height: 1.35rem;
+}
+.jieshao .text{
+    width: calc(100% - 1.35rem);
+    height: 100%;
+    padding-left: 50px;
+    margin-top: -1.6rem;
+}
+.jieshao .text .s1{
+    color: white;
+    font-size: 0.3rem;
+}
+.jieshao .text .s2{
+    color: white;
+    font-size: 0.23rem;
+}
+.jieshao .text .song{
+    height: 0.28rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.28rem;
+    margin-bottom: 0.3rem;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.jieshao .text .song img{
+    width: 0.28rem;
+    height: 0.28rem;
+    margin-right: 0.05rem;
+}
+.jieshao .text h3{
+    font-size: 0.26rem;
+    color: white;
+    font-weight: normal;
+}
+/*介绍结束*/
+/*歌曲开始*/
+.gequ{
+    width: 100%;
+    height: 9.10rem;
+    margin-top: 0.9rem;
+}
+.gequ li{
+    width:100%;
+    height: 1.22rem;
+    border-bottom: 0.01rem dashed lightgray;
+    padding-top: 0.37rem;
+    display: flex;
+}
+.gequ li span{
+    font-size: 0.22rem;
+    color: #f85f7c;
+}
+.gequ li .text{
+    margin-left: 0.2rem;
+    height: 0.58rem;
+    display: flex;
+    flex-direction: column;
+}
+.gequ li .text h3{
+    font-size: 0.23rem;
+    color:#6b6c6e;
+    font-weight: normal;
+}
+.gequ li .text h4{
+    font-size: 0.16rem;
+    color: #d6d6d6;
+    font-weight: normal;
+}
+.gequ li img{
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    right: 0.24rem;
+    transition: all 0.5s;
+}
+.xuanzhuan{
+    transform: rotatez(90deg);
+}
+/*歌曲结束*/

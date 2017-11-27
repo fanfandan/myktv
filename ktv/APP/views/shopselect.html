@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/ktv/public/css/shopselect.css">
+    <script src="/ktv/public/js/rem.js"></script>
+    <script src="/ktv/public/js/jquery-3.2.1.js"></script>
+    <script src="/ktv/public/js/shop.js"></script>
+</head>
+<body>
+  <header>
+      <img src="/ktv/public/img/Bar.png" alt="">
+  </header>
+  <!--按钮开始-->
+  <div class="toubu">
+        <a href=""></a>
+       <section class="nav">
+           <button class="active"><span class="s1">酒水</span> <span class="s2">24</span></button>
+           <button><span class="s1">零食</span> <span class="s2">02</span></button>
+           <div class="flag"></div>
+         </section>
+      <a href=""></a>
+  </div>
+   <!--按钮结束-->
+   <ul class="main">
+       <?php for($i=0;$i<count($data1);$i++) { ?>
+       <li>
+           <div class="tu">
+               <img src="<?php echo $data1[$i]['img']?>" alt="">
+           </div>
+           <div class="text">
+               <h3><?php echo $data1[$i]['name']?></h3>
+               <div class="price"><span class="s1">￥</span><span class="s2"><?php echo $data1[$i]['price']?>
+                         </span></div>
+               <div class="content">
+                   <div class="reduce"></div>
+                   <div class="wenzi">02</div>
+                   <div class="plus"></div>
+               </div>
+           </div>
+       </li>
+       <?php } ?>
+       <li></li>
+       <li></li>
+   </ul>
+</body>
+</html>

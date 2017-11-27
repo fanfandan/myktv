@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/yylbg.png") ;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*滑块部分开始*/
+.toubu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.81rem;
+}
+.toubu a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav{
+    width:3.7rem;
+    height:0.68rem;
+    background: white;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+button{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border:none;
+    background:none;
+    font-size: 0.21rem;
+    line-height: 0.48rem;
+    text-align: center;
+    color: black;
+    z-index: 999999;
+}
+button.active{
+    background: #ff318d;
+}
+button.active .s1{
+    color: white;
+}
+button.active .s2{
+    color: gray;
+}
+button.active:nth-of-type(1) ~ .flag{
+    transform: translate3D(144%,0,0);
+}
+button.active:nth-of-type(2) ~ .flag{
+    transform:translate3D(253%,0,0);
+}
+.flag{
+    width:1.54rem;
+    height: 0.48rem;
+    border-radius: 0.4rem;
+    background: #ff318d;
+    position: absolute;
+    z-index: 666;
+    left: 0;
+    transition: all 0.5s;
+}
+/*按钮结束*/
+/*内容开始*/
+.wrapper{
+    width:6.95rem;
+    height:8.01rem;
+    top:2.45rem;
+    left:0.24rem;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    overflow: hidden;
+    margin-top: -0.5rem;
+}
+.wrapper.active{
+    z-index: 99;
+}
+.wrapper .srcoller{
+    position: absolute;
+    width:6.95rem;
+    height:auto;
+    background: white;
+    z-index: 1;
+}
+.main li{
+    width:100%;
+    height:2.67rem;
+    border-bottom: 0.01rem dashed lightgray;
+}
+.main li .tu{
+    width:3.16rem;
+    height:100%;
+    position: relative;
+    display: inline-block;
+}
+.main li .tu img{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    width:2.17rem;
+    height:2.09rem;
+}
+.main li .text{
+    width:3.27rem;
+    height:100%;
+    padding-top: 0.63rem;
+    padding-left: 0.26rem;
+    float:right;
+    position: relative;
+}
+.main li .text .hot {
+    position: absolute;
+    top: 0.7rem;
+    left: 2.1rem;
+    height: 0.16rem;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.main li .text .hot img{
+    width: 0.22rem;
+    height: 0.3rem;
+    display: block;
+    margin-right: 0.08rem;
+}
+.main li .text h3{
+    font-size: 0.2rem;
+    margin-bottom: 0.16rem;
+    font-weight: normal;
+}
+.main li .text .price{
+    width:100%;
+    height:0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.main li .text .price .s1{
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: #ff4a7d;
+}
+.main li .text .price .s2{
+    font-size: 0.3rem;
+    color: #ff4a7d;
+    font-weight: normal;
+}
+.content{
+    width:1.77rem;
+    height:0.35rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 0.3rem;
+}
+.content .reduce{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/subtract.png") center/cover;
+}
+.content .wenzi{
+    width:0.81rem;
+    height:0.35rem;
+    border-radius: 0.33rem;
+    border:0.02rem solid gray;
+    text-align: center;
+    line-height: 0.35rem;
+    font-size: 0.17rem;
+}
+.content .plus{
+    width:0.35rem;
+    height:0.35rem;
+    background: url("../img/plus.png") center/cover;
+}
+/*内容结束*/
+/*底部开始*/
+footer{
+    width:100%;
+    height:2.39rem;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    /*background:#ff318d;*/
+    box-shadow: 0 -0.5rem 0.07rem 1rem rgba(248,49,158 0.2);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+    box-sizing: border-box;
+}
+footer .choose{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+footer .choose span {
+    font-size: 0.26rem;
+    margin-right: 0.33rem;
+}
+footer .choose li{
+    font-size: 0.26rem;
+    margin-right: 0.33rem;
+}
+footer .choose .xuanze{
+    display: flex;
+}
+footer .choose .xuanze>div{
+    width: auto;
+    height: 0.42rem;
+    background: #ff318e;
+    border: 0.01rem solid #db6399;
+    color: white;
+    font-size: 0.23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.19rem;
+    padding-top: 0.11rem;
+    padding-left: 0.13rem;
+    border-radius: 0.13rem;
+    text-align: center;
+    line-height: 0.42rem;
+    padding-right: 0.13rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer .choose .more{
+    width: 0.46rem;
+    height: 0.09rem;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    position: absolute;
+    right:0.24rem;
+}
+footer .choose .more.active{
+    visibility: visible;
+}
+footer .choose .more>div{
+    width: 0.1rem;
+    height:0.1rem;
+    border-radius: 50%;
+}
+footer .choose .more>div:first-of-type{
+    background: #ff3b93;
+}
+footer .choose .more>div:nth-of-type(2){
+    background: #ff83bb;
+}
+footer .choose .more>div:nth-of-type(3){
+    background: #ffe5f1;
+}
+footer .bottom{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottom .total{
+    flex: 1;
+    color:#ff318e;
+    display: flex;
+    align-items: baseline;
+}
+footer .bottom .total span:first-of-type{
+    font-size: 0.38rem;
+}
+footer .bottom .total span:nth-of-type(2){
+    font-size: 0.42rem;
+}
+footer .bottom .total span:nth-of-type(3){
+    font-size: 0.21rem;
+}
+footer .bottom .xuan{
+    flex: 1;
+    width: 3.52rem;
+    height: 0.76rem;
+    background: url(../img/button01.png) no-repeat center/cover;
+    font-size: 0.28rem;
+    color: #ffffff;
+    line-height: 0.76rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*底部结束*/

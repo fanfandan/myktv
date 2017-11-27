@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/hb2.png") no-repeat center/cover;
+    padding-top: 0.14rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+    padding-bottom: 0.21rem;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    width:100%;
+    height:0.2rem;
+    margin-bottom: 0.3rem;
+
+}
+header img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.toubu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0.81rem;
+}
+.toubu a:first-of-type{
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url("../img/sd10 (1).png") no-repeat center/cover;
+}
+.nav{
+    width:2.91rem;
+    height:0.7rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 0.32rem;
+    color: white;
+}
+/*内容开始*/
+.img{
+    width:3.57rem;
+    height: 4.57rem;
+    background: url("../img/gx.png") no-repeat center/cover;
+    margin-top: 2.84rem;
+    margin-left: 1.81rem;
+}
+/*内容结束*/
+/*结束*/
+.fanhui{
+    width: 5.82rem;
+    height: 0.93rem;
+    /* background: url(../img/button01.png) center/cover; */
+    font-size: 0.27rem;
+    margin-top: 2.34rem;
+    margin-left: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #FF318E;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    letter-spacing: 0.17rem;
+}
